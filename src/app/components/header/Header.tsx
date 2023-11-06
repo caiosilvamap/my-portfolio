@@ -6,7 +6,7 @@ export default function Header() {
         <div className="header">
             <div>
                 <h1>
-                    Hi, i'm Caio! <Icon id="hi-icon" src="/hi-icon.svg" alt="icon insta" width={50} height={50} />
+                    Hi, I&apos;m Caio! <Icon id="hi-icon" src="/hi-icon.svg" alt="icon insta" width={50} height={50} />
                 </h1>
                 <h2>Full Stack Developer</h2>
             </div>
