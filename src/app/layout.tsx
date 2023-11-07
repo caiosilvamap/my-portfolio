@@ -10,6 +10,9 @@ const inter = Poppins({
 export const metadata = {
   title: 'Caio Silva',
   description: 'Caio Silva is a full stack developer...',
+  icons:{
+    icon:['/favicon.svg?v=4']
+  }
 }
 
 export default function RootLayout({
