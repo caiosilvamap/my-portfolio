@@ -14,45 +14,46 @@
         align-items: center;
         justify-content: center;
     }
-}
 
-.social a:hover {
-    transition: 0.5s;
-    transition-property: box-shadow;    
-}
+    a:hover {
+        transition: 0.5s;
+        transition-property: box-shadow;
+    }
 
-.social #instagram:hover{
-    background: rgb(255, 0, 157);
-    box-shadow: 0 0 25px rgb(255, 0, 157);
-    box-shadow: 0 0 5px rgb(255, 0, 157),
-        0 0 25px rgb(255, 0, 157),
-        0 0 50px rgb(255, 0, 157),
-        0 0 100px rgb(255, 0, 157);
-}
+    #instagram:hover {
+        background: rgb(255, 0, 157);
+        box-shadow: 0 0 25px rgb(255, 0, 157);
+        box-shadow: 0 0 5px rgb(255, 0, 157),
+            0 0 25px rgb(255, 0, 157),
+            0 0 50px rgb(255, 0, 157),
+            0 0 100px rgb(255, 0, 157);
+    }
 
-.social #linkedin:hover{
-    background: rgb(41, 95, 243);
-    box-shadow: 0 0 25px rgb(41, 95, 243);
-    box-shadow: 0 0 5px rgb(41, 95, 243),
-        0 0 25px rgb(41, 95, 243),
-        0 0 50px rgb(41, 95, 243),
-        0 0 100px rgb(41, 95, 243);
-}
+    #linkedin:hover {
+        background: rgb(41, 95, 243);
+        box-shadow: 0 0 25px rgb(41, 95, 243);
+        box-shadow: 0 0 5px rgb(41, 95, 243),
+            0 0 25px rgb(41, 95, 243),
+            0 0 50px rgb(41, 95, 243),
+            0 0 100px rgb(41, 95, 243);
+    }
 
-.social #github:hover{
-    background: rgb(0, 0, 0);
-    box-shadow: 0 0 25px rgb(0, 0, 0);
-    box-shadow: 0 0 5px rgb(0, 0, 0),
-        0 0 25px rgb(0, 0, 0),
-        0 0 50px rgb(0, 0, 0),
-        0 0 100px rgb(0, 0, 0);
-}
+    #github:hover {
+        background: rgb(0, 0, 0);
+        box-shadow: 0 0 25px rgb(0, 0, 0);
+        box-shadow: 0 0 5px rgb(0, 0, 0),
+            0 0 25px rgb(0, 0, 0),
+            0 0 50px rgb(0, 0, 0),
+            0 0 100px rgb(0, 0, 0);
+    }
 
-.social #whatsapp:hover{
-    background: rgb(18, 247, 10);
-    box-shadow: 0 0 25px rgb(18, 247, 10);
-    box-shadow: 0 0 5px rgb(18, 247, 10),
-        0 0 25px rgb(18, 247, 10),
-        0 0 50px rgb(18, 247, 10),
-        0 0 100px rgb(18, 247, 10);
+    #whatsapp:hover {
+        background: rgb(18, 247, 10);
+        box-shadow: 0 0 25px rgb(18, 247, 10);
+        box-shadow: 0 0 5px rgb(18, 247, 10),
+            0 0 25px rgb(18, 247, 10),
+            0 0 50px rgb(18, 247, 10),
+            0 0 100px rgb(18, 247, 10);
+    }
+
 }
