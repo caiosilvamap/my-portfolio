@@ -27,8 +27,8 @@
 
             border-radius: 24px;
             height: 28px;
-            border: 1px solid  linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
-            background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+            border: 1px solid  var(--bg-gradient);
+            background: var(--bg-gradient);
 
             color: var(--text-primary);
             font-weight: 300;
