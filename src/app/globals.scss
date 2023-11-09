@@ -2,7 +2,7 @@
   --text-primary: white;
   --text-secondary: #B3B3B3;
   --bg-primary: #2c2c2c;
-  --bg-gradient: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+  --bg-gradient: linear-gradient(90deg, #00ff4d 2.62%, #00ffeb 93.38%);
 }
 
 * {
@@ -18,5 +18,6 @@ body {
 }
 
 body{
-  background-color: var(--bg-primary);
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
+
