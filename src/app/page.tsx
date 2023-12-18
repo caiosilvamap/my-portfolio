@@ -15,7 +15,7 @@ export default function Home() {
         <SocialBtns />
         <a className="btn-primary" target="_blank" href="mailto:caiosilvamap@gmail.com">
           contact me
-          <Icon id="email-icon" src="/email-icon.svg" alt="icom E-mail" width={30} height={30} />
+          <Icon id="email-icon" src="/email-icon.svg" alt="icon E-mail" width={30} height={30} />
         </a>
       </div>
     </main>
