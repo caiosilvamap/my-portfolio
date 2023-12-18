@@ -18,10 +18,10 @@ export default function Info() {
                     <Icon id="flag-icon" src="/spanish-icon.svg" alt="icon spanish" width={40} height={40} />ES - Basic
                 </span>
             </div>
-                <SectionTitle text="Education" />
+            <SectionTitle text="Education" />
             <div className="educational-info">
                 <span>
-                    <Icon id="flag-icon" src="/education-icon.svg" alt="icon education" width={40} height={40} />Computer Science - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro (IFRJ)
+                    <Icon id="flag-icon" src="/education-icon.svg" alt="icon education" width={40} height={40} /> Licenciate Computer Science - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro (IFRJ)
                 </span>
             </div>
         </div>
