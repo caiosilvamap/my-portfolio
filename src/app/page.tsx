@@ -1,3 +1,4 @@
+import Analytics from "./components/Analytics/Analytics";
 import SocialBtns from "./components/SocialBtns/SocialBtns";
 import Experience from "./components/experience/Experience";
 import Header from "./components/header/Header";
@@ -18,6 +19,7 @@ export default function Home() {
           <Icon id="email-icon" src="/email-icon.svg" alt="icon E-mail" width={30} height={30} />
         </a>
       </div>
+      <Analytics />
     </main>
   )
 }
