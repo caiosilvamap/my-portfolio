@@ -1,23 +1,22 @@
-import React from "react";
+import Script from "next/script";
 
-const Analytics = () => (
+const GA_TRACKING_ID = "G-KCJ578VBNW";
+
+export default function Analytics() {
+  return (
     <>
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-KCJ578VBNW"
-        />
-        <script
-            dangerouslySetInnerHTML={{
-                __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-              
-                gtag('config', 'G-KCJ578VBNW');        
-            `
-            }}
-        />
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}');
+        `}
+      </Script>
     </>
-)
-
-export default Analytics
+  );
+}

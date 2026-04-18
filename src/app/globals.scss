@@ -1,8 +1,24 @@
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/manrope/400.css";
+@import "@fontsource/manrope/500.css";
+@import "@fontsource/manrope/600.css";
+
 :root {
-  --text-primary: white;
-  --text-secondary: #B3B3B3;
-  --bg-primary: #2c2c2c;
-  --bg-gradient: linear-gradient(90deg, #2700ff 2.62%, #7529a7 93.38%);
+  --bg-primary: #060b12;
+  --bg-secondary: #0b131d;
+  --surface-primary: rgba(12, 19, 29, 0.86);
+  --surface-secondary: rgba(17, 27, 39, 0.92);
+  --border-soft: rgba(118, 152, 181, 0.14);
+  --border-strong: rgba(118, 152, 181, 0.24);
+  --text-primary: #f2f6fb;
+  --text-secondary: #b7c3d0;
+  --text-muted: #8293a7;
+  --accent-primary: #66ddff;
+  --accent-secondary: #ff9656;
+  --shadow-soft: 0 28px 60px rgba(0, 0, 0, 0.28);
+  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
 }
 
 * {
@@ -11,13 +27,51 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-body{
-  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at top right, rgba(81, 214, 255, 0.12), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(255, 140, 77, 0.1), transparent 28%),
+    linear-gradient(180deg, #081019 0%, #05080d 100%);
+  color: var(--text-primary);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 85%);
+  opacity: 0.32;
+}
+
+a,
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  color: #041019;
+  background: rgba(102, 221, 255, 0.92);
 }
 

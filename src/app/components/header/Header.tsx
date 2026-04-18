@@ -10,7 +10,7 @@ export default function Header() {
                 </h1>
                 <h2>Full Stack Developer</h2>
             </div>
-            <Icon id="profile-image" src="/me.jpg" alt="picture perfil" width={290} height={330} />
+            <Icon id="profile-image" src="/me.jpeg" alt="picture perfil" width={290} height={330} />
         </div>
     )
 }

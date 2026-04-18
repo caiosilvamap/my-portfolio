@@ -1,19 +1,25 @@
-import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
-import './globals.scss'
+import type { Metadata } from "next";
+import "./globals.scss";
 
-const inter = Poppins({ 
-  subsets: ['latin'], 
-  weight: ['300', '400', '500', '600']
-})
-
-export const metadata = {
-  title: 'Caio Silva',
-  description: 'Caio Silva is a full stack developer...',
-  icons:{
-    icon:['/favicon.svg?v=4']
-  }
-}
+export const metadata: Metadata = {
+  title: "Caio Silva Marques Porto | Full Stack Developer",
+  description:
+    "Portfólio de Caio Silva Marques Porto, desenvolvedor full stack com experiência em .NET, C#, SQL Server, React, Next.js, Python e Flutter.",
+  keywords: [
+    "Caio Silva",
+    "Full Stack Developer",
+    ".NET",
+    "C#",
+    "SQL Server",
+    "React",
+    "Next.js",
+    "Python",
+    "Flutter",
+  ],
+  icons: {
+    icon: ["/favicon.svg?v=4"],
+  },
+};
 
 export default function RootLayout({
   children,
@@ -21,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR">
+      <body>{children}</body>
     </html>
   )
 }
