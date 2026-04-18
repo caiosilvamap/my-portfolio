@@ -645,13 +645,16 @@
   }
 
   .topbar-nav {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
   .topbar-nav a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     min-height: 36px;
     padding: 0 10px;
     border-radius: 999px;
