@@ -148,6 +148,8 @@ h3 {
 }
 
 .topbar-link {
+  flex-shrink: 0;
+  white-space: nowrap;
   padding: 10px 20px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
