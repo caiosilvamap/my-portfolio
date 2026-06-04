@@ -8,12 +8,16 @@ export const metadata: Metadata = {
   keywords: [
     "Caio Silva",
     "Full Stack Developer",
+    "Software Engineer",
     ".NET",
     "C#",
     "SQL Server",
+    "PostgreSQL",
     "React",
     "Next.js",
+    "Node.js",
     "Python",
+    "FastAPI",
     "Flutter",
   ],
   icons: {

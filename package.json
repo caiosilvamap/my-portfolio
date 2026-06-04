@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/fraunces": "^5.2.9",
     "@fontsource/manrope": "^5.2.8",
     "@fontsource/space-grotesk": "^5.2.10",
     "@svgr/webpack": "^8.1.0",

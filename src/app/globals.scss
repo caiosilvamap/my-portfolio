@@ -1,24 +1,39 @@
-@import "@fontsource/space-grotesk/500.css";
-@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/fraunces/400.css";
+@import "@fontsource/fraunces/500.css";
+@import "@fontsource/fraunces/600.css";
+@import "@fontsource/fraunces/400-italic.css";
 @import "@fontsource/manrope/400.css";
 @import "@fontsource/manrope/500.css";
 @import "@fontsource/manrope/600.css";
 
 :root {
-  --bg-primary: #060b12;
-  --bg-secondary: #0b131d;
-  --surface-primary: rgba(12, 19, 29, 0.86);
-  --surface-secondary: rgba(17, 27, 39, 0.92);
-  --border-soft: rgba(118, 152, 181, 0.14);
-  --border-strong: rgba(118, 152, 181, 0.24);
-  --text-primary: #f2f6fb;
-  --text-secondary: #b7c3d0;
-  --text-muted: #8293a7;
-  --accent-primary: #66ddff;
-  --accent-secondary: #ff9656;
-  --shadow-soft: 0 28px 60px rgba(0, 0, 0, 0.28);
-  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  /* Deep ink base */
+  --ink-900: #07090d;
+  --ink-800: #0a0d12;
+  --ink-700: #0e131a;
+  --surface: rgba(16, 21, 29, 0.55);
+  --surface-strong: rgba(20, 26, 35, 0.72);
+
+  /* Hairlines */
+  --line: rgba(214, 224, 236, 0.1);
+  --line-strong: rgba(214, 224, 236, 0.18);
+
+  /* Text */
+  --text-primary: #eef2f8;
+  --text-secondary: #aab4c2;
+  --text-muted: #6f7c8c;
+
+  /* Single molten accent */
+  --molten-1: #ff7a3c;
+  --molten-2: #ff4d6d;
+  --molten-soft: rgba(255, 122, 60, 0.16);
+  --molten-line: rgba(255, 122, 60, 0.4);
+  --molten-gradient: linear-gradient(120deg, #ff9a4d 0%, #ff5e3a 45%, #ff3d71 100%);
+
+  --font-display: "Fraunces", "Georgia", serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
+
+  --shadow-soft: 0 40px 90px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -40,29 +55,33 @@ body {
 body {
   min-height: 100vh;
   font-family: var(--font-body);
-  background:
-    radial-gradient(circle at top right, rgba(81, 214, 255, 0.12), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(255, 140, 77, 0.1), transparent 28%),
-    linear-gradient(180deg, #081019 0%, #05080d 100%);
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--text-primary);
+  background-color: var(--ink-900);
+  background-image:
+    radial-gradient(900px 520px at 78% -8%, rgba(255, 122, 60, 0.14), transparent 60%),
+    radial-gradient(760px 480px at 8% 18%, rgba(255, 77, 109, 0.08), transparent 58%),
+    linear-gradient(180deg, var(--ink-800) 0%, var(--ink-900) 100%);
+  -webkit-font-smoothing: antialiased;
 }
 
-body::before {
+/* Fine film grain overlay */
+body::after {
   content: "";
   position: fixed;
   inset: 0;
+  z-index: 2;
   pointer-events: none;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 85%);
-  opacity: 0.32;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
 
 a,
 button {
   font: inherit;
+  color: inherit;
 }
 
 img {
@@ -71,7 +90,6 @@ img {
 }
 
 ::selection {
-  color: #041019;
-  background: rgba(102, 221, 255, 0.92);
+  color: var(--ink-900);
+  background: var(--molten-1);
 }
-

@@ -44,16 +44,16 @@ const caseStudies = [
   {
     title: "CSN",
     status: "Atual",
-    role: "Analista Jr. • Ago/2024 - hoje",
+    role: "Desenvolvedor de Software • desde Mar/2023",
     summary:
-      "Desenvolvimento full cycle de sistemas web e desktop usados diretamente por operadores na produção de aço.",
+      "Desenvolvimento full cycle e sustentação de sistemas web e desktop de missão crítica, em ambiente de alta disponibilidade. Progressão de estágio a desenvolvedor.",
     focus:
-      "Alta disponibilidade, integração entre sistemas e manipulação de dados em tempo real.",
+      "Alta disponibilidade, integração entre sistemas e processamento de dados em tempo real.",
     bullets: [
-      "Aplicações em C# / Windows Forms para fluxos operacionais e uso direto em produção.",
-      "APIs REST para integração entre sistemas corporativos e industriais.",
-      "Otimização de queries SQL Server em bases com milhões de registros.",
-      "Suporte em plantão, diagnóstico e restauração rápida de incidentes críticos.",
+      "Aplicações em C# / .NET para fluxos de negócio críticos em produção.",
+      "APIs REST para integração entre sistemas corporativos.",
+      "Otimização de queries SQL Server em bases com milhões de registros e criação de base histórica.",
+      "Suporte on-call, diagnóstico e restauração rápida de incidentes críticos.",
     ],
     stack: ["C#", ".NET", "Windows Forms", "SQL Server", "REST APIs", "IIS", "Windows Server"],
     linkLabel: "LinkedIn",
@@ -61,19 +61,19 @@ const caseStudies = [
   },
   {
     title: "InfoAgro",
-    status: "Em produção",
-    role: "Freelance / Projeto colaborativo",
+    status: "Atual",
+    role: "Pesagro-Rio • Desenvolvedor de Software • desde Ago/2025",
     summary:
-      "Portal web para o setor agropecuário do Sul Fluminense, atendendo à PESAGRO-RIO.",
+      "Portal web para a PESAGRO-RIO que centraliza dados e recursos do agronegócio do Sul Fluminense para produtores e pesquisadores.",
     focus:
-      "Entrega full stack em ambiente real, com usuários ativos e colaboração com outros desenvolvedores.",
+      "Entrega full stack em produção, com dashboards de dados, autenticação e fluxos de cadastro orientados ao usuário.",
     bullets: [
-      "Frontend construído com Next.js usando TailAdmin como base de interface.",
-      "Back-end em Python FastAPI.",
-      "Desenvolvimento de funcionalidades, integração e estruturação de dados do portal.",
-      "Participação direta em sistema já em produção.",
+      "Frontend em Next.js / React / TypeScript com páginas públicas e dashboards de visualização de dados agrícolas.",
+      "Autenticação, gestão de usuários e cadastro multi-step de produtores com validações.",
+      "Integração com API em FastAPI e banco PostgreSQL.",
+      "Estruturação técnica do projeto, definição de padrões e versionamento com Git.",
     ],
-    stack: ["Next.js", "TypeScript", "FastAPI", "Python", "TailAdmin", "Integração de dados"],
+    stack: ["Next.js", "React", "TypeScript", "FastAPI", "PostgreSQL", "Dashboards"],
     linkLabel: "infoagro.org",
     linkHref: "https://infoagro.org/",
   },
@@ -82,9 +82,9 @@ const caseStudies = [
     status: "Em lançamento",
     role: "Projeto próprio / Mobile & Full Stack",
     summary:
-      "Aplicativo mobile de e-commerce para petshop, com operação completa de catálogo, pedidos e administração.",
+      "Aplicativo mobile de e-commerce para petshop, iniciado em parceria familiar, com operação completa de catálogo, pedidos e administração.",
     focus:
-      "Produto próprio com stack mobile + serverless, painel administrativo e fluxo completo de comércio eletrônico.",
+      "Produto próprio com stack mobile + serverless e painel administrativo; parceria firmada com petshop físico para venda local via app.",
     bullets: [
       "App mobile em Flutter.",
       "Back-end serverless com Firebase Authentication, Firestore e Storage.",
@@ -99,16 +99,16 @@ const caseStudies = [
 
 const timeline = [
   {
-    period: "Ago/2024 - hoje",
+    period: "Mar/2023 - hoje",
     title: "Companhia Siderúrgica Nacional",
     description:
-      "Atuação em sistemas de alta disponibilidade, desenvolvimento full cycle e suporte de produção 24/7.",
+      "De estágio a desenvolvedor: full cycle e sustentação de sistemas críticos de alta disponibilidade e dados em tempo real.",
   },
   {
-    period: "Projeto colaborativo",
-    title: "InfoAgro",
+    period: "Ago/2025 - hoje",
+    title: "Pesagro-Rio • InfoAgro",
     description:
-      "Portal em produção com Next.js e FastAPI para o setor agropecuário do Sul Fluminense.",
+      "Desenvolvedor full stack do portal em produção com Next.js, FastAPI e PostgreSQL para o agronegócio do Sul Fluminense.",
   },
   {
     period: "Produto próprio",
@@ -120,13 +120,13 @@ const timeline = [
     period: "2020 - 2025",
     title: "IFRJ • Licenciatura em Computação",
     description:
-      "Formação em computação com base prática para desenvolvimento, arquitetura de software e colaboração em equipe.",
+      "Formação em computação no Campus Pinheiral, com base prática para desenvolvimento, arquitetura de software e colaboração em equipe.",
   },
 ] as const;
 
 const profileFacts = [
   { label: "Base", value: "Volta Redonda - RJ, Brasil" },
-  { label: "Formação", value: "Licenciatura em Computação • IFRJ" },
+  { label: "Formação", value: "Licenciatura em Computação • IFRJ Pinheiral" },
   { label: "Idiomas", value: "PT-BR nativo • Inglês básico" },
   { label: "Modo de trabalho", value: "Scrum, Kanban, colaboração multidisciplinar" },
 ] as const;
@@ -142,11 +142,11 @@ const stackGroups = [
   },
   {
     title: "Back-end",
-    items: [".NET", "ASP.NET Core", "FastAPI", "Django", "REST APIs", "LINQ"],
+    items: [".NET", "ASP.NET Core", "Node.js", "FastAPI", "REST APIs", "JWT/OAuth", "LINQ"],
   },
   {
     title: "Dados & Mobile",
-    items: ["SQL Server", "Oracle", "Firebase Firestore", "Flutter"],
+    items: ["SQL Server", "PostgreSQL", "Oracle", "Firebase Firestore", "Flutter"],
   },
   {
     title: "Infra & Entrega",
@@ -233,16 +233,18 @@ export default function Home() {
           <p className="eyebrow">FULL STACK DEVELOPER • .NET • NEXT.JS • FLUTTER</p>
           <div className="hero-status">
             <span className="status-dot" />
-            Atualmente desenvolvendo software full stack na CSN
+            Aberto a novas oportunidades em produtos de tecnologia
           </div>
 
-          <h1>Software confiável, produtos web escaláveis e experiências mobile bem construídas.</h1>
+          <h1>
+            Software confiável e <em>produtos digitais</em> que escalam, da web ao mobile.
+          </h1>
 
           <p className="hero-summary">
             Sou Caio Silva Marques Porto, desenvolvedor full stack com experiência em sistemas de alta
-            disponibilidade, aplicações web e desktop, integração via APIs REST, grandes volumes de
-            dados e produtos digitais. Trabalho com foco em performance, confiabilidade e entrega de
-            ponta a ponta.
+            disponibilidade, integração via APIs REST, grandes volumes de dados e produtos digitais
+            ponta a ponta. Busco aplicar essa base em uma empresa com tecnologia no centro do negócio,
+            com foco em performance, confiabilidade e produto.
           </p>
 
           <div className="hero-actions">
@@ -283,10 +285,6 @@ export default function Home() {
                 priority
                 className="portrait-image"
               />
-            </div>
-
-            <div className="visual-caption">
-              <span>Construindo produtos digitais com foco em performance, experiência e clareza técnica.</span>
             </div>
           </div>
 
